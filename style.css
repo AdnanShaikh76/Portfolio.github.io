@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat+Subrayada&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+/* -----------------------------Home---------------- */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #00ffbf;
+}
+nav
+{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    position: absolute;
+    /* top: -15px; */
+    left: 50px;
+    opacity: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+nav ul
+{
+    display: flex;
+    gap: 60px;
+    margin-left: 850px;
+}
+nav ul a{
+    text-decoration: none;
+    font-size: 26px;
+    color: #200553;
+    font-family: 'Fasthand', cursive;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul .home{
+	opacity: 0;
+    animation: myAnim 1s ease 2s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+nav ul .Portfolio{
+	opacity: 0;
+    animation: myAnim 1s ease 3s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+nav ul .Contact{
+	opacity: 0;
+    animation: myAnim 1s ease 4s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+nav ul a:hover{
+    color: #392f97;
+}
+nav .darkmodebtn{
+	position: relative;
+	right: 25px;
+	filter: blur(2px);
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+	background: #000;
+	color:#FFFFff;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border: none;
+	border-radius: 15px;
+}
+nav .darkmodebtn:hover{
+	filter: blur(0px);
+}
+.container .emoji{
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+    margin-left: 749px;
+    width: 600px;
+	opacity: 0;
+	animation: myAnim5 1s ease 5s 1 normal forwards;
+}
+@keyframes myAnim5 {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.content1{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 180px;
+	height: 80px;
+	/* background-color: #ffffff; */
+	/* opacity: 0.3; */
+}
+.content1 h1{
+	font-size: 60px;
+	font-family: 'Fasthand', cursive;
+	color: #040336;
+	opacity: 0;
+	animation: myAnim6 1s ease 6s 1 normal forwards;
+}
+@keyframes myAnim6 {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.content1 h1 span{
+	color: #040336;
+}
+.content2{
+	position: absolute;
+	top: 320px;
+	left: 200px;
+	width: 500px;
+	height: 80px;
+}
+.content2 p1{
+	font-size: 40px;
+	font-family: 'Playfair Display', serif;
+	color : #040336;
+	opacity: 0;
+	animation: myAnim7 1s ease 7s 1 normal forwards;
+}
+@keyframes myAnim7 {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.content2 p2{
+	font-size: 40px;
+	font-family: 'Playfair Display', serif;
+	color : #040336;
+	opacity: 0;
+	animation: myAnim8 1s ease 8s 1 normal forwards;
+}
+@keyframes myAnim8 {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.downbtn{
+	position: absolute;
+	top: 550px;
+	left: 650px;
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	/* opacity: 0.5; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	cursor: pointer;
+	transition: 0.5s;
+	/* animation: Downjump 3s infinite; */
+	animation: myAnim9 2s ease 9s 5 normal forwards;
+}
+.downbtn ion-icon{
+	margin-top: 7px;
+	font-size: 25px;
+	color: #200553;
+}
+@keyframes myAnim9 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.downbtn:hover{
+	background-color: #00FF78	;
+	color: #ffffff;
+}
+.dark{
+	background-color: #222;
+	color: #e6e6e6;
+}
+/* ----------------------POrfolio------------------ */
+.containerportfoilo{
+	width: 100%;
+    height: 100vh;
+    background: #00FF78;
+	border:5px solid #ffffff;
+}
+.containerportfoilo h1{
+	font-size: 80px;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerportfoilo p
+{
+	margin-top: 100px;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Fasthand', cursive;
+}
+.arrowbtn{
+	position: relative;
+	top: 280px;
+	left: 1275px;
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.arrowbtn ion-icon{
+	color:#200553 ;
+	font-size: 22px;
+}
+.arrowbtn:hover{
+	background: #00ffbf;
+}
+/* -------------------contact us ------------------ */
+.containercontact{
+	width: 100%;
+    height: 100vh;
+    background: #2c7ba8;
+	border: 5px solid #ffffff;
+}
+.containercontact h1{
+	position: relative;
+	top: 20px;
+	font-size: 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	color: #ffffff;
+}
+.containercontact .bigbox{
+	position: relative;
+	top: 50px;
+	left: 260px;
+	width: 900px;
+	height: 70vh;
+	background: #ffffff;
+	display: flex;
+	border-radius: 10px;
+}
+.bigbox .contentform{
+	position: relative;
+	top: 30px;
+	left: 220px;
+	/* margin-left: 50px; */
+	width: 650px;
+	height: 60vh;
+	background: #020202;
+	border-radius: 10px;
+	padding: 15px 20px;
+	border: 3px solid #00FF78;
+}
+.containercontact .smallbox{
+	position: relative;
+	top: 30px;
+	left: -730px;
+	content: '';
+	width: 350px;
+	height: 60vh;
+	background-color: #000;
+	border: 3px solid #0FF0FC;
+	padding: 10px 20px;
+	border-radius: 10px;
+	/* box-shadow: 5px 5px 5px 5px #0FF0FC; */
+	/* animation: Border infinite; */
+}
+.smallbox p{
+	font-family: 'Fasthand', cursive;
+	color: #3fc0ab;
+	font-size: 22px;
+}
+.smallbox p hr{
+	color: #0FF0FC;
+}
+.smallbox ul{
+	list-style: none;
+	margin-top: 40px;
+	display: flex;
+	gap: 20px;
+}
+.smallbox ul a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 28px;
+	transition: 0.5s;
+}
+.smallbox ul a:hover{
+	color: #0FF0FC;
+	transform: translateY(-3px);
+}
+.smallbox ul li{
+	margin-left: 20px;
+}
+.smallbox .email{
+	position: relative;
+	top: 30px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.smallbox .phoneno{
+	position: relative;
+	top: 60px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.phoneno:hover{
+	color: #00ffbf;
+}
+.email:hover{
+	color: #00ffbf;
+}
+.containercontact .arrowbtn{
+	position: relative;
+	top: 60px;
+	left: 1275px;
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.smallbox .p2{
+	margin-top: 40px;
+}
+.contentform form{
+	display: flex;
+	flex-direction: column;
+}
+.contentform form p{
+	font-family: 'Fasthand', cursive;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #0FF0FC;
+}
+.contentform form textarea{
+	padding: 5px 5px;
+	border: none;
+	font-size: 13px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	font-family: 'Fasthand', cursive;
+	color: #000;
+}
+.contentform form .sbtbtn{
+	position: relative;
+	left: 350px;
+	width: 150px;
+	height: 40px;
+	margin-bottom: 5px;
+	color: #ffffff;
+	background: #000;
+	border: 2px solid #0FF0FC;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 00.5s;
+}
+.contentform form ion-icon{
+	color: #0FF0FC;
+	font-weight: 400;
+	font-size: 18px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.contentform form .sbtbtn:hover{
+	background: #ffffff;
+	color: #000;
+	font-weight: 600;
+}
+.contentform form a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.contentform form .cv{
+	padding:5px 10px;
+	width: 180px;
+	height: 40px;
+	background: #000;
+	border-radius: 10px;
+	border: 2px solid #0FF0FC;
+}
+.contentform form .dwnbtn{
+	width: 160px;
+	height: 35px;
+	border-radius: 8px;
+	border: 2px solid #0FF0FC;
+	background: #000;
+	color: #e6e6e6;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.contentform form .dwnbtn:hover{
+	background: #ffffff;
+	color: #000;
+	font-weight: 600;
+}
+.footer{
+	padding: 5px 10px;
+	width: 100%;
+	height: 25px;
+	background: #888;
+	text-align: center;
+}
